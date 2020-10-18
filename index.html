@@ -30,9 +30,7 @@
     </div>
  <!-- header end -->   
 
-
-
-<!-- home  start-->   
+ 
     <div id="home">
         <div class="container-fluid">
             <div class="txt0">
@@ -44,151 +42,105 @@
             </div>
         </div>
     </div>
- <!-- home  end-->     
 
 
- <!-- menu start-->    
-
-    <div class="container-fluid">
-        <div class="container" id="menu">
-            <h2 class="p-5"><u>Menu</u></h2>
-            <div class="card-deck">
-                <div class="card col-lg-3 col-sm-1">
-                    <div class="card-body">
-                        <h5 class="card-title heads">Choose Pizza Type</h5>
-                        <p class="card-text graph">Cheese Pizza,Veggie Pizza, Meat Pizza, BBQ Chicken Pizza, Hawaiian Pizza, and the Works Pizza are among the many variety of pizzas we have.</p>  
-                    </div>
+    <div class="row justify-content-around">
+        <form id="pizzaMenu" class="col-md-5">
+          
+          <h1>Pizza Menu</h1>
+          <div class="form-group row align-items-center">
+            <label class="col-sm-3 col-form-label" for="pizzaSize">Size of Pizza</label>
+            <select id="pizzaSize" class="form-control col-sm-9">
+              <option value="500">Small @500/=</option>
+              <option value="750">Medium @750/=</option>
+              <option value="1000">Large @1000/=</option>
+            </select>
+          </div>
+          <div class="form-group row align-items-center">
+            <label class="col-sm-3 col-form-label" for="pizzaCrust">Type of Crust</label>
+            <select id="pizzaCrust" class="form-control col-sm-9">
+              <option value="100">Thin @100/=</option>
+              <option value="200">Regular @200/=</option>
+              <option value="300">Thick @300/=</option>
+            </select>
+          </div>
+          <fieldset id="pizzaToppings" class="form-group" form="pizzaMenu">
+            <div class="row align-items-center">
+              <legend class="col-form-label col-sm-3">Extra Toppings</legend>
+              <div class="col-sm-12">
+                <div class="form-check">
+                  <input class="form-check-input" id="chicken" type="checkbox" value="30" />
+                  <label class="form-check-label" for="chicken">Grilled Chicken @30/=</label>
                 </div>
-                <div class="card col-lg-3 col-sm-1">
-                    <div class="card-body">
-                        <h5 class="card-title heads">Choose Pizza Size</h5>
-                        <p class="card-text graph">Small, Medium, Large, Extra large and Mega are the sizes that our pizzas come in.However, we can make them to your desired sizes.</p>  
-                    </div>
+                <div class="form-check">
+                  <input class="form-check-input" id="bacon" type="checkbox" value="50" />
+                  <label class="form-check-label" for="bacon">Beef Bacon @50/=</label>
                 </div>
-                <div class="card col-lg-3 col-sm-1">
-                    <div class="card-body">
-                        <h5 class="card-title heads">Choose Toppings & Crust</h5>
-                        <p class="card-text graph"> You can choose Toppings and Crusts from veggie topped to meat topped and anything in between.</p>
-                    </div>
+                <div class="form-check">
+                  <input class="form-check-input" id="ham" type="checkbox" value="70" />
+                  <label class="form-check-label" for="ham">Beef Ham @70/=</label>
                 </div>
-                <div class="card col-lg-3 col-sm-1">
-                    <div class="card-body">
-                        <h5 class="card-title heads">Quantity & Checkout</h5>
-                        <p class="card-text">Decide on the number you want, choose whether you want it delivered or not and leave the rest to us.</p>
-                    </div>
+                <div class="form-check">
+                  <input class="form-check-input" id="mushroom" type="checkbox" value="20" />
+                  <label class="form-check-label" for="mushroom">Fresh Mushrooms @20/=</label>
                 </div>
+                <div class="form-check">
+                  <input class="form-check-input" id="pineapple" type="checkbox" value="60" />
+                  <label class="form-check-label" for="pineapple">Pineapple @60/=</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" id="cheese" type="checkbox" value="70" />
+                  <label class="form-check-label" for="cheese">Extra Cheese @70/=</label>
+                </div>
+              </div>
             </div>
+          </fieldset>
+          <div class="form-group row align-items-center">
+            <label class="col-sm-3 col-form-label" for="pizzaCount">Number of Pizzas</label>
+            <input class="form-control col-sm-9" id="pizzaCount" type="number" min="1" />
+          </div>
+          <div class="form-group mr-n3">
+            <button class="btn btn-outline-success form-control" type="submit">Place Your Order</button>
+          </div>
+        </form>
+        <div id="pizzaCart" class="col-md-6">
+          <h1>Pizza Cart</h1>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Size</th>
+                <th>Crust</th>
+                <th>Toppings</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <hr/>
+          <p>The total charge is <span id="tt-charge">0</span>/=</p>
+          <form id="delivery">
+            <p>Would you like a delivery at 300/=?</p>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" name="delivery" type="radio" id="pick-up" value="pick"/>
+              <label class="form-check-label" for="pick-up">
+                Pick-Up
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" name="delivery" type="radio" id="deliver" value="deliver"/>
+              <label class="form-check-label" for="deliver">
+                Delivery
+              </label>
+            </div>
+            <input class="form-control" id="deliveryLocation" type="text" placeholder="Delivery Location..."/>
+        </form>
+          <button id="checkoutBtn" class="btn btn-outline-success form-control">Checkout</button>
         </div>
+      </div>
     </div>
-<!-- menu end-->
-
-<!-- order form start-->  
-    <div class="container-fluid">
-        <div class="container"  id="waiter">
-            <br>
-            <br>
-            <br>
-            <br>
-            <button type="button" style="align-items: center;" class="btn btn-outline-info btn-lg" id="waiter">MAKE AN ORDER</button>
-            <div class="row">
-                <div class="col-md-4 mx-auto py-2">
-                    <form id="myOrderForm">
-                        <div class="form-group">
-                            <label for="sel1">Select type:</label>
-                            <select class="form-control" id="type">
-                                <option>Cheese</option>
-                                <option>Veggie</option>
-                                <option>Meat</option>
-                                <option>BBQ Chicken</option>
-                                <option>Hawaiian</option>
-                                <option>The works</option>                                                             
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="sel1">Select size:</label>
-                            <select class="form-control" id="size">
-                                <option value="1">Mega-2500</option>
-                                <option value="2">Extra-Large-1800</option>
-                                <option value="3">Large-1200</option>
-                                <option value="4">Medium-800</option>
-                                <option value="5">Small-600</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="sel1">Select crust:</label>
-                            <select class="form-control" id="crusting">
-                                <option value="1">Cripsy-100</option>
-                                <option value="2">Stuffed-120</option>
-                                <option value="3">Glutten-free-200</option>
-                                <option value="4">Luctose-free-250</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="sel1">Select topping:</label>
-                            <select class="form-control" id="top">
-                                <option value="1">Pepperoni-100</option>
-                                <option value="2">Mushrooms-120</option>
-                                <option value="3">Sausage-150</option>
-                                <option value="4">Bacon-200</option>
-                                <option value="5">Pinapple-300</option>
-                            </select>
-                        </div>
-                        <div class="form-group" required>
-                            <label for="sel1">Quantity:</label>
-                            <input type="number" id="quantity" class="form-control" min="1" required>
-                        </div>
-                        <div class="form-group" required="">
-                            <label for="sel1">Delivery option:</label>
-                            <select class="form-control" id="delivery">
-                                <option value="1">No Delivery</option>
-                                <option value="2">Delivery</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="btn btn-info btn-block" onclick="submit()">Order</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-<!-- order form end-->  
-
-<!-- contact form start-->
-    <div class="container-fluid pl-0 pr-0">
-        <div id="contactUs">
-            <h2>Contact Us</h2>
-
-            <div class="container">
-            <form onsubmit=" return validateForm()" class="form">           
-                    <div class="row">
-                    <div class="col">
-                        <input type="text" class="mt-3 form-control" placeholder="Name" id="name" required>
-                    </div>
-                    <div class="col">
-                        <input type="email" class="mt-3 form-control col-form-label" placeholder="Email" id="email"
-                            required>
-                    </div>
-                    <div class="col-sm-12" id="text">
-                        <textarea type="text" class="mt-3 form-control" placeholder="Leave us a message..." id="message"
-                            rows="6" required></textarea>
-                    </div><br>
-                    <div id="mitsub">
-                        <button type="submit" class="btn btn-outline-info mt-3">Submit</button>  
-                    </div>
-            </div>
-            </form>
-            <p style="text-align:center;">Pronto Pizza <br> &copy; 2020</p>
-        </div>    
-    </div>
-<!-- contact form end-->    
 
 
 
-
-
-
- 
 
 </body>
 </html>
