@@ -41,9 +41,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
 
-
+      <div class="jumbotron">
       <div class="row justify-content-around">
         <form id="pizzaMenu" class="col-md-5">          
           <h1>Pizza Menu</h1>
@@ -64,28 +64,28 @@
             </select>
           </div>
 
-          <fieldset id="pizzaToppings" class="form-group" form="pizzaMenu">
+          <fieldset id="pizzaToppings" form="pizzaMenu">
             <div class="row align-items-center">
               <legend class="col-form-label col-sm-3">Toppings</legend>
               <div class="col-sm-12">
                 <div class="form-check">
-                  <input class="form-check-input" id="chicken" type="checkbox" value="30" />
+                  <input class="form-check-input" id="chicken" type="checkbox" value="1000" />
                   <label class="form-check-label" for="chicken"> BBQ Grilled Chicken @100/=</label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" id="bacon" type="checkbox" value="50" />
+                  <input class="form-check-input" id="bacon" type="checkbox" value="100" />
                   <label class="form-check-label" for="bacon">Beef Bacon @100/=</label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" id="ham" type="checkbox" value="70" />
+                  <input class="form-check-input" id="ham" type="checkbox" value="150" />
                   <label class="form-check-label" for="ham">Virgin Ham @150/=</label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" id="mushroom" type="checkbox" value="20" />
+                  <input class="form-check-input" id="mushroom" type="checkbox" value="200" />
                   <label class="form-check-label" for="mushroom">Hullucigen Mushrooms @200/=</label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" id="pineapple" type="checkbox" value="60" />
+                  <input class="form-check-input" id="pineapple" type="checkbox" value="160" />
                   <label class="form-check-label" for="pineapple">Fresh Pineapple @160/=</label>
                 </div>
                 <div class="form-check">
@@ -101,7 +101,7 @@
             <input class="form-control col-sm-9" id="pizzaCount" type="number" min="1" />
           </div>
           <div class="form-group mr-n3">
-            <button class="btn btn-outline-success form-control" type="submit">Order</button>
+            <button class="btn btn-outline-success" type="submit">Order</button>
           </div>
         </form>
         <div id="pizzaCart" class="col-md-6">
@@ -126,7 +126,7 @@
             <div class="form-check form-check-inline">
               <input class="form-check-input" name="delivery" type="radio" id="pick-up" value="pick"/>
               <label class="form-check-label" for="pick-up">
-                Pick-Up
+                Collect.
               </label>
             </div>
             <div class="form-check form-check-inline">
@@ -140,6 +140,7 @@
           <button id="checkoutBtn" class="btn btn-outline-success form-control">Checkout</button>
         </div>
       </div>
+    </div>
     </div>
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/script.js"></script>
