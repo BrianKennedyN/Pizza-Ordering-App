@@ -42,7 +42,7 @@
  <!-- home  end-->     
 
 
- <!-- home  start-->    
+ <!-- menu start-->    
 
     <div class="container-fluid">
         <div class="container" id="menu">
@@ -75,6 +75,75 @@
             </div>
         </div>
     </div>
+
+    <div class="container-fluid">
+        <div class="container"  id="waiter">
+            <br>
+            <br>
+            <button type="button" style="align-items: center;" class="btn btn-outline-info btn-lg" id="waiter">MAKE AN ORDER</button>
+            <div class="row">
+                <div class="col-md-4 mx-auto py-2">
+                    <form id="myForm">
+                        <div class="form-group">
+                            <label for="sel1">Select type:</label>
+                            <select class="form-control" id="type">
+                                <option>Cheese</option>
+                                <option>Veggie</option>
+                                <option>Meat</option>
+                                <option>BBQ Chicken</option>
+                                <option>Hawaiian</option>
+                                <option>The works</option>                                                             
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="sel1">Select size:</label>
+                            <select class="form-control" id="size">
+                                <option value="1">Mega-2500</option>
+                                <option value="2">Extra-Large-1800</option>
+                                <option value="3">Large-1200</option>
+                                <option value="4">Medium-800</option>
+                                <option value="5">Small-600</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="sel1">Select crust:</label>
+                            <select class="form-control" id="crusting">
+                                <option value="1">Cripsy-100</option>
+                                <option value="2">Stuffed-120</option>
+                                <option value="3">Glutten-free-200</option>
+                                <option value="4">Luctose-free-250</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="sel1">Select topping:</label>
+                            <select class="form-control" id="top">
+                                <option value="1">Pepperoni-100</option>
+                                <option value="2">Mushrooms-120</option>
+                                <option value="3">Sausage-150</option>
+                                <option value="4">Bacon-200</option>
+                                <option value="5">Pinapple-300</option>
+                            </select>
+                        </div>
+                        <div class="form-group" required>
+                            <label for="sel1">Quantity:</label>
+                            <input type="number" id="quantity" class="form-control" min="1" required>
+                        </div>
+                        <div class="form-group" required="">
+                            <label for="sel1">Delivery option:</label>
+                            <select class="form-control" id="delivery">
+                                <option value="1">No Delivery</option>
+                                <option value="2">Delivery</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-info btn-block" onclick="submit()">Order</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
 
 
 

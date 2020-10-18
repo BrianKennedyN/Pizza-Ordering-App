@@ -36,7 +36,13 @@
     font-size: 1.5em;
   }
 
-  .p-5{
+  .p-5 {
       text-align: center;
       font-size: 50px;
-  }
+    }
+
+    #waiter{
+        text-align: center;
+        background-color: yellow;
+    }
+
