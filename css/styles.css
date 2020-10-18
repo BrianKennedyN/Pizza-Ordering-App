@@ -43,6 +43,12 @@
 
     #waiter{
         text-align: center;
-        background-color: yellow;
+        background-image: url(/images/a.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #myOrderForm{
+        display: none;
     }
 
