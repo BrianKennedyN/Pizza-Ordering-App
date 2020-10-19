@@ -2,7 +2,7 @@ Pronto Pizza.
  By Brian Kennedy Njoroge
 
  ## Live Link 
-https://briankennedyn.github.io/Delani-Studio/
+https://briankennedyn.github.io/Pizza-Ordering-App/
 
 ## Description
 This is website is a fictional website application for Pronto Pizza.
