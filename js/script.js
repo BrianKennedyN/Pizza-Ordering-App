@@ -12,6 +12,7 @@ $(document).ready(function() {
   
       event.preventDefault();
     });
+
     // Display checkout button on order placement
     $("#checkoutBtn").click(function() {
       var delivery = $("#delivery :checked").val();
@@ -23,7 +24,7 @@ $(document).ready(function() {
         Your total charge is ${allCharge + 300}/=
         Your delivery is en-route to ${location}`);
       // } else {
-      //   alert(`Thanks for shopping withPizza.
+      //   alert(`Thanks for shopping with Pronto Pizza.
       //   Your total charge is ${allCharge}`);
       }
     });
@@ -61,6 +62,7 @@ $(document).ready(function() {
     var orderPrice = (sizePrice + crustPrice + toppingsTotalPrice) * this.count;
     return orderPrice;
   };
+  
   // Add pizza to cart
   function addToCart(order) {
     var toppings = order.toppings
