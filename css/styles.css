@@ -13,7 +13,7 @@
 }
 
 #home {
-    background-image: url(/images/photo-1513104890138-7c749659a591.jpeg);
+    background-image: url(../images/photo-1513104890138-7c749659a591.jpeg);
     height: 91vh;
     background-size: cover;
     background-attachment: fixed;
